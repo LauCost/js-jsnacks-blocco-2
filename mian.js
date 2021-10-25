@@ -32,3 +32,12 @@ for (const key in bike) {
     console.log(bike[key]);
 }
 
+var lowest = Number.POSITIVE_INFINITY;
+
+var tmp;
+for (var i = bike.length - 1; i >= 0; i--) {
+    tmp = bike[i].peso;
+    if (tmp < lowest) lowest = tmp;
+}
+console.log(lowest);
+
